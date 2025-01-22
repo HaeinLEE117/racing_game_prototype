@@ -22,7 +22,7 @@ public class GasSpawner : MonoBehaviour
     {
         while(true)
         {
-            Vector3 spawnPoint = spawnPoints[Random.Range(0, 2)];
+            Vector3 spawnPoint = spawnPoints[Random.Range(0, 3)];
             Instantiate(GasCube, spawnPoint, Quaternion.identity);
             yield return new WaitForSeconds(spawnPeriod);
         }
